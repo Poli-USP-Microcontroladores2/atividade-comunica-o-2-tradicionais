@@ -1,0 +1,24 @@
+empty_file.o: \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/misc/empty_file.c \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/dts/common/mem.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/armv6-m.dtsi \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/dts/common/skeleton.dtsi \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/dt-util.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_macro.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_loops.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_listify.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/clock/kinetis_sim.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/clock/kinetis_mcg.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/dts/nxp/kinetis/MKL25Z128VLK4-pinctrl.h \
+ /Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/input/input-event-codes.h

@@ -38,11 +38,9 @@ Link usado como referência:
 
 ## 3.2 Casos de Teste Planejados (TDD)
 
-### CT1 – Eco básico
+## Detalhado dentro de docs no evidence.md
 
-* Entrada:
-* Saída esperada:
-* Critério de Aceitação:
+### CT1 – Eco básico
 
 ### CT2 – Linha vazia
 

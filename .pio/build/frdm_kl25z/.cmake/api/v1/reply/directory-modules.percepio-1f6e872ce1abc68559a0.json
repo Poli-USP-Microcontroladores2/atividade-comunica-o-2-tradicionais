@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/percepio",
+		"source" : "/Users/anitapereira/.platformio/packages/framework-zephyr/modules/percepio"
+	}
+}

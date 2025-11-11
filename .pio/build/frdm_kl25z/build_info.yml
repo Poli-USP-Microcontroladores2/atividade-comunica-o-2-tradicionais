@@ -1,0 +1,44 @@
+cmake:
+  application:
+    configuration-dir: '/Users/anitapereira/atividade-comunica-o-2-tradicionais/zephyr'
+    source-dir: '/Users/anitapereira/atividade-comunica-o-2-tradicionais/zephyr'
+  board:
+    name: 'frdm_kl25z'
+    path:
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z'
+    qualifiers: 'mkl25z4'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/bindings'
+    files:
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts'
+    include-dirs:
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/dts'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/include'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/common'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/vendor'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/rx'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/x86'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/xtensa'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/sparc'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/riscv'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/posix'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm64'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arc'
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/dts'
+  kconfig:
+    files:
+     - '/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z_defconfig'
+     - '/Users/anitapereira/atividade-comunica-o-2-tradicionais/zephyr/prj.conf'
+    user-files:
+     - '/Users/anitapereira/atividade-comunica-o-2-tradicionais/zephyr/prj.conf'
+  toolchain:
+    name: 'gnuarmemb'
+    path: '/Users/anitapereira/.platformio/packages/toolchain-gccarmnoneeabi'
+  zephyr:
+    version: '4.2.0'
+    zephyr-base: '/Users/anitapereira/.platformio/packages/framework-zephyr'
+version: '0.1.0'
