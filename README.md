@@ -32,9 +32,7 @@ docs/
 
 ## 3.1 Descrição do Funcionamento
 
-Descrever aqui de forma textual o comportamento esperado baseado no exemplo oficial.
-Link usado como referência:
-[https://docs.zephyrproject.org/latest/samples/drivers/uart/echo_bot/README.html](https://docs.zephyrproject.org/latest/samples/drivers/uart/echo_bot/README.html)
+O funcionamento do código acontece através da interação com um driver serial UART (uart0). O usuário digita uma mensagem no terminal. Essa mensagem é armazenada na fila de mensagens RX através da ativação de uma interrupção. Após a finalização da RSI, o código retorna para o loop na main, que envia no terminal uma mensagem contendo a enviada pelo usuário utilizando o modo polling (não por interrupção, que nem o recebimento de mensagens).
 
 ## 3.2 Casos de Teste Planejados (TDD)
 
@@ -52,7 +50,7 @@ Link usado como referência:
 
 ## 3.3 Implementação
 
-* Arquivo(s) modificados:
+* Arquivo(s) modificados: platformio.ini, prj.conf, sample.yaml e main.c
 * Justificativa das alterações:
 
 ## 3.4 Evidências de Funcionamento
