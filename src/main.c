@@ -32,9 +32,6 @@ void print_uart(char *buf)
 void serial_rx(void *a, void *b, void *c){
     while(1){
         k_sem_take(&semrx, K_FOREVER);
-        uint8_t c;
-        int64_t inicio = k_uptime_get();
-        int64_t tempo = 0;
 
         LOG_INF("Fim da impressão! Inicio da escrita!");
 
@@ -53,7 +50,6 @@ void serial_tx(void *a, void *b, void *c){
     while (1) {
         k_sem_take(&semtx, K_FOREVER);
         int64_t inicio = k_uptime_get();
-        int64_t tempo = 0;
         LOG_INF("Fim da escrita! Inicio da impressão!");
 
         print_uart(rx_buf);
