@@ -1,19 +1,15 @@
-/*
- * Copyright (c) 2022 Libre Solar Technologies GmbH
- *
- * SPDX-License-Identifier: Apache-2.0
- */
-
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/uart.h>
-
+#include <zephyr/logging/log.h>
 #include <string.h>
 
 /* change this to any other UART peripheral if desired */
 #define UART_DEVICE_NODE DT_CHOSEN(zephyr_shell_uart)
 
-#define MSG_SIZE 32
+#define MSG_SIZE 64
+
+LOG_MODULE_REGISTER(uart_log, LOG_LEVEL_INF);
 
 /* queue to store up to 10 messages (aligned to 4-byte boundary) */
 K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 10, 4);
@@ -22,86 +18,68 @@ static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 
 /* receive buffer used in UART ISR callback */
 static char rx_buf[MSG_SIZE];
-static int rx_buf_pos;
 
-/*
- * Read characters from UART until line end is detected. Afterwards push the
- * data to the message queue.
- */
-void serial_cb(const struct device *dev, void *user_data)
+K_SEM_DEFINE(semrx, 1, 1);
+K_SEM_DEFINE(semtx, 0, 1);
+
+void print_uart(char *buf)
 {
-	uint8_t c;
+    while (*buf) {
+        uart_poll_out(uart_dev, *buf++);
+    }
+}
 
-	if (!uart_irq_update(uart_dev)) {
-		return;
-	}
+void serial_rx(void *a, void *b, void *c){
+    while(1){
+        k_sem_take(&semrx, K_FOREVER);
+        uint8_t c;
+        int64_t inicio = k_uptime_get();
+        int64_t tempo = 0;
 
-	if (!uart_irq_rx_ready(uart_dev)) {
-		return;
-	}
+        LOG_INF("Fim da impressão! Inicio da escrita!");
 
-	/* read until FIFO empty */
-	while (uart_fifo_read(uart_dev, &c, 1) == 1) {
-		if ((c == '\n' || c == '\r') && rx_buf_pos > 0) {
-			/* terminate string */
-			rx_buf[rx_buf_pos] = '\0';
+        k_msleep(5000);
 
-			/* if queue is full, message is silently dropped */
-			k_msgq_put(&uart_msgq, &rx_buf, K_NO_WAIT);
+        snprintf(rx_buf, MSG_SIZE,
+                 "ECHO!!!! tempo=%llu ms\r\n",
+                 k_uptime_get());
 
-			/* reset the buffer (it was copied to the msgq) */
-			rx_buf_pos = 0;
-		} else if (rx_buf_pos < (sizeof(rx_buf) - 1)) {
-			rx_buf[rx_buf_pos++] = c;
-		}
-		/* else: characters beyond buffer size are dropped */
-	}
+        k_sem_give(&semtx);
+    }
+}
+
+
+void serial_tx(void *a, void *b, void *c){
+    while (1) {
+        k_sem_take(&semtx, K_FOREVER);
+        int64_t inicio = k_uptime_get();
+        int64_t tempo = 0;
+        LOG_INF("Fim da escrita! Inicio da impressão!");
+
+        print_uart(rx_buf);
+
+        while (k_uptime_get() - inicio < 5000) {
+            k_msleep(50);
+        }
+
+        k_sem_give(&semrx);
+    }
 }
 
 /*
  * Print a null-terminated string character by character to the UART interface
  */
-void print_uart(char *buf)
-{
-	int msg_len = strlen(buf);
 
-	for (int i = 0; i < msg_len; i++) {
-		uart_poll_out(uart_dev, buf[i]);
-	}
-}
+K_THREAD_DEFINE(uart_rx_thread, 1024, serial_rx, NULL, NULL, NULL, 2, 0, 0);
+K_THREAD_DEFINE(uart_tx_thread, 1024, serial_tx, NULL, NULL, NULL, 1, 0, 5);
 
 int main(void)
 {
-	char tx_buf[MSG_SIZE];
-
 	if (!device_is_ready(uart_dev)) {
 		printk("UART device not found!");
 		return 0;
 	}
 
-	/* configure interrupt and callback to receive data */
-	int ret = uart_irq_callback_user_data_set(uart_dev, serial_cb, NULL);
-
-	if (ret < 0) {
-		if (ret == -ENOTSUP) {
-			printk("Interrupt-driven UART API support not enabled\n");
-		} else if (ret == -ENOSYS) {
-			printk("UART device does not support interrupt-driven API\n");
-		} else {
-			printk("Error setting UART callback: %d\n", ret);
-		}
-		return 0;
-	}
-	uart_irq_rx_enable(uart_dev);
-
 	print_uart("Hello! I'm your echo bot.\r\n");
 	print_uart("Tell me something and press enter:\r\n");
-
-	/* indefinitely wait for input from the user */
-	while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
-		print_uart("Echo: ");
-		print_uart(tx_buf);
-		print_uart("\r\n");
-	}
-	return 0;
 }
