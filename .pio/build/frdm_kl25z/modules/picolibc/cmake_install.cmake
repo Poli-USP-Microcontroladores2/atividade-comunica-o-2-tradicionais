@@ -1,8 +1,8 @@
-# Install script for directory: /Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc
+# Install script for directory: C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Zephyr-Kernel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,23 +34,23 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/anitapereira/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "C:/Users/alexa/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/libc.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/libc.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/picolibc.specs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/picolibc.specs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/picolibc/include/picolibc.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/picolibc/include/picolibc.h")
 endif()
 

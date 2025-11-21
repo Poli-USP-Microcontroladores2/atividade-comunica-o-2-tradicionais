@@ -1,28 +1,28 @@
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/misc/empty_file.c"
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/misc/empty_file.c"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 1
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 1
 
 
 /dts-v1/;
 
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 1 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 1 3 4
 
 
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/common/mem.h" 1 3 4
-# 4 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/armv6-m.dtsi" 1 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/common/mem.h" 1 3 4
+# 4 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/armv6-m.dtsi" 1 3 4
 
 
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/common/skeleton.dtsi" 1 3 4
-# 9 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/common/skeleton.dtsi" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/common/skeleton.dtsi" 1 3 4
+# 9 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/common/skeleton.dtsi" 3 4
 / {
  #address-cells = <1>;
  #size-cells = <1>;
  chosen { };
  aliases { };
 };
-# 4 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/armv6-m.dtsi" 2 3 4
+# 4 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/armv6-m.dtsi" 2 3 4
 
 / {
  soc {
@@ -46,46 +46,46 @@
   };
  };
 };
-# 5 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
-# 9 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
-# 19 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_macro.h" 1 3 4
-# 34 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_macro.h" 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 1 3 4
-# 18 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_loops.h" 1 3 4
-# 1083 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_loops.h" 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_listify.h" 1 3 4
-# 1084 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_loops.h" 2 3 4
-# 19 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 162 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
-# 163 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 193 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
-# 194 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 5 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
+# 9 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/adc/adc.h" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
+# 19 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_macro.h" 1 3 4
+# 34 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_macro.h" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 1 3 4
+# 18 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_loops.h" 1 3 4
+# 1083 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_loops.h" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_listify.h" 1 3 4
+# 1084 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_loops.h" 2 3 4
+# 19 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 162 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_is_eq.h" 1 3 4
+# 163 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 193 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_inc.h" 1 3 4
+# 194 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
 
 
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
-# 197 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_dec.h" 1 3 4
+# 197 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
 
 
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
-# 200 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
-# 35 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/sys/util_macro.h" 2 3 4
-# 20 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
-# 10 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
-# 6 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/clock/kinetis_sim.h" 1 3 4
-# 7 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/clock/kinetis_mcg.h" 1 3 4
-# 8 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
-# 9 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
-# 10 "/Users/anitapereira/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal_util_x2.h" 1 3 4
+# 200 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+# 35 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/sys/util_macro.h" 2 3 4
+# 20 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
+# 10 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/adc/adc.h" 2 3 4
+# 6 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/clock/kinetis_sim.h" 1 3 4
+# 7 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/clock/kinetis_mcg.h" 1 3 4
+# 8 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
+# 9 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
+# 10 "C:/Users/alexa/.platformio/packages/framework-zephyr/dts/arm/nxp/nxp_kl25z.dtsi" 2 3 4
 
 / {
  chosen {
@@ -288,11 +288,11 @@
 &nvic {
  arm,num-irq-priority-bits = <2>;
 };
-# 6 "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 2
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi" 1
-# 10 "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi"
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/dts/nxp/kinetis/MKL25Z128VLK4-pinctrl.h" 1 3 4
-# 11 "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi" 2
+# 6 "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 2
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi" 1
+# 10 "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi"
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/dts/nxp/kinetis/MKL25Z128VLK4-pinctrl.h" 1 3 4
+# 11 "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z-pinctrl.dtsi" 2
 
 &pinctrl {
  adc0_default: adc0_default {
@@ -322,9 +322,9 @@
  };
 
 };
-# 7 "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 2
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
-# 8 "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 2
+# 7 "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 2
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/include/zephyr/dt-bindings/input/input-event-codes.h" 1 3 4
+# 8 "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/frdm_kl25z.dts" 2
 
 / {
  model = "NXP Freedom KL25Z board";
@@ -459,4 +459,4 @@ zephyr_udc0: &usbotg {
  num-bidir-endpoints = <8>;
 };
 # 1 "<command-line>" 2
-# 1 "/Users/anitapereira/.platformio/packages/framework-zephyr/misc/empty_file.c"
+# 1 "C:/Users/alexa/.platformio/packages/framework-zephyr/misc/empty_file.c"

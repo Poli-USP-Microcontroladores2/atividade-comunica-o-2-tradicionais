@@ -1,8 +1,8 @@
-# Install script for directory: /Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libm
+# Install script for directory: C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Zephyr-Kernel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,36 +34,36 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/anitapereira/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "C:/Users/alexa/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/machine/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/machine/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/common/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/math/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/math/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/ld/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/ld/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/fenv/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/fenv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/complex/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/modules/picolibc/newlib/libm/complex/cmake_install.cmake")
 endif()
 

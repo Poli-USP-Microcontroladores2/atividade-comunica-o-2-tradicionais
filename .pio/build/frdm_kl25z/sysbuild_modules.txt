@@ -1,1 +1,1 @@
-"mcuboot":"/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/bootloader/mcuboot":"/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/bootloader/mcuboot/boot/zephyr/sysbuild"
+"mcuboot":"C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/bootloader/mcuboot":"C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/bootloader/mcuboot/boot/zephyr/sysbuild"

@@ -1,2 +1,2 @@
 # Load Sysbuild board Kconfig descriptions.
-osource "/Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/Kconfig.sysbuild"
+osource "C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/Kconfig.sysbuild"

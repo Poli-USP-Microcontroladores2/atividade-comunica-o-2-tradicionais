@@ -12,12 +12,12 @@ debug-runner: linkserver
 
 # Common runner configuration values.
 config:
-  board_dir: /Users/anitapereira/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z
+  board_dir: C:/Users/alexa/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z
   # Build outputs:
   elf_file: zephyr.elf
   bin_file: zephyr.bin
   # Host tools:
-  gdb: /Users/anitapereira/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gdb
+  gdb: C:/Users/alexa/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gdb.exe
 
 # Runner specific arguments
 args:

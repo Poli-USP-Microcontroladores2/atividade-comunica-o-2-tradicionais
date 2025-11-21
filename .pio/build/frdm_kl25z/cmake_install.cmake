@@ -1,8 +1,8 @@
-# Install script for directory: /Users/anitapereira/atividade-comunica-o-2-tradicionais/zephyr
+# Install script for directory: C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/zephyr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Zephyr-Kernel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/anitapereira/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "C:/Users/alexa/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/zephyr/cmake_install.cmake")
+  include("C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/zephyr/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/anitapereira/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/alexa/Documents/Codigos/atividade-comunica-o-2-tradicionais/.pio/build/frdm_kl25z/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

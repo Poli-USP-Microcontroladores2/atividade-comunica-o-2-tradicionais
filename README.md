@@ -38,43 +38,18 @@ O funcionamento do código acontece através da interação com um driver serial
 
 ## Detalhado dentro de docs no evidence.md
 
-### CT1 – Eco básico
-
-### CT2 – Linha vazia
-
-### CT3 – Linha longa
-
-(Adicionar mais casos se necessário.)
-
 ## 3.3 Implementação
 
-* Arquivo(s) modificados: platformio.ini, prj.conf, sample.yaml e main.c
-* Justificativa das alterações:
+* Arquivo(s) modificados: platformio.ini, prj.conf.
+* Justificativa das alterações: O platformio.ini precisou ser modificado algumas vezes devido ás necessidades específicas de um dos integrantes da equipe que trabalhava com o pio em plataforma Mac. Além disso, apenas algumas configurações para habilitar logging no prj.conf foram adicionadas. Fora isso, o código executado é exatamente o mesmo apresentado como exemplo do site do zephyr.
 
 ## 3.4 Evidências de Funcionamento
 
-Salvar evidências em `docs/evidence/echo_bot/`.
-
-Exemplo de referência no README:
-
-```
-[Link para o log CT1](docs/evidence/echo_bot/ct1_output.txt)
-```
-
-Adicionar aqui pequenos trechos ilustrativos:
-
-```
-Hello! I'm your echo bot. Tell me something and press enter:
-Echo: Hello World!
-```
+Evidências em `docs/evidence/`.
 
 ## 3.5 Diagramas de Sequência D2
 
-Vide material de apoio: https://d2lang.com/tour/sequence-diagrams/
-
-Adicionar arquivos (diagrama completo e o código-base para geração do diagrama) em `docs/sequence-diagrams/`.
-
----
+Diagramas em `docs/sequence-diagrams/`.
 
 # 4. Etapa 2 – Async API (Transmissão/Recepção Assíncrona)
 

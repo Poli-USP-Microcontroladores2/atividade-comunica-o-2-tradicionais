@@ -1,8 +1,8 @@
-# Install script for directory: /Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp
+# Install script for directory: C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Zephyr-Kernel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,18 +34,18 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/anitapereira/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "C:/Users/alexa/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-objdump.exe")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ssp" TYPE FILE FILES
-    "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/ssp.h"
-    "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/stdio.h"
-    "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/stdlib.h"
-    "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/string.h"
-    "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/strings.h"
-    "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/unistd.h"
-    "/Users/anitapereira/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/wchar.h"
+    "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/ssp.h"
+    "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/stdio.h"
+    "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/stdlib.h"
+    "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/string.h"
+    "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/strings.h"
+    "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/unistd.h"
+    "C:/Users/alexa/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/wchar.h"
     )
 endif()
 

@@ -88,7 +88,7 @@ int main(void)
 		if (ret == -ENOTSUP) {
 			printk("Interrupt-driven UART API support not enabled\n");
 		} else if (ret == -ENOSYS) {
-			printk("UART device does not support interrupt-driven API\n")ups;
+			printk("UART device does not support interrupt-driven API\n");
 		} else {
 			printk("Error setting UART callback: %d\n", ret);
 		}
